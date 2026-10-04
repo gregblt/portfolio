@@ -37,16 +37,16 @@ header.top nav a.nl.active{color:var(--violet);text-decoration:underline;text-de
 header.top a:focus-visible{outline:2px solid var(--violet);outline-offset:3px}
 section,#top{scroll-margin-top:64px}
 
-.hero{display:grid;grid-template-columns:minmax(0,1fr) 280px;gap:48px;align-items:start;padding:44px 0 48px;border-bottom:1px solid var(--line)}
+.hero{display:grid;grid-template-columns:minmax(0,1fr) 180px;gap:40px;align-items:start;padding:44px 0 48px;border-bottom:1px solid var(--line)}
 .hero .intro{grid-column:1;grid-row:1;max-width:68ch}
 .hero p{margin:0 0 16px;font-family:var(--serif);font-size:1.18rem;line-height:1.65}
 .hero p:last-child{margin-bottom:0}
 .hero p b{font-weight:600}
 .hero p a{color:inherit;text-decoration:underline;text-decoration-color:var(--violet);text-decoration-thickness:2px;text-underline-offset:4px}
 .hero p a:hover{color:var(--violet)}
-.portrait{grid-column:2;grid-row:1;margin:0;aspect-ratio:1;border:1px solid var(--ink);box-shadow:8px 8px 0 var(--violet);background:var(--violet-soft);position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center}
+.portrait{grid-column:2;grid-row:1;margin:0;aspect-ratio:1;border:1px solid var(--ink);box-shadow:6px 6px 0 var(--violet);background:var(--violet-soft);position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center}
 .portrait img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
-.portrait .mono-gb{font-family:var(--serif);font-size:4.2rem;font-style:italic;color:var(--violet)}
+.portrait .mono-gb{font-family:var(--serif);font-size:3rem;font-style:italic;color:var(--violet)}
 .portrait.ok .mono-gb{display:none}
 .links{display:flex;flex-direction:column;border-top:1px solid var(--ink)}
 .link{display:flex;justify-content:space-between;padding:11px 0;border-bottom:1px solid var(--line);text-decoration:none;font-family:var(--mono);font-size:.85rem}
@@ -147,14 +147,14 @@ footer .row a:hover{color:#fff}
 /* le contenu de gauche s'adapte à la place restante quand le panneau est ouvert */
 main .wrap{container-type:inline-size}
 @container (max-width:760px){
-  .hero{grid-template-columns:minmax(0,1fr) 190px;gap:28px}
-  .portrait{box-shadow:5px 5px 0 var(--violet)}
-  .portrait .mono-gb{font-size:3rem}
+  .hero{grid-template-columns:minmax(0,1fr) 150px;gap:28px}
+  .portrait{box-shadow:4px 4px 0 var(--violet)}
+  .portrait .mono-gb{font-size:2.4rem}
   .hero p{font-size:1.08rem}
 }
 @container (max-width:520px){
   .hero{grid-template-columns:1fr;gap:24px}
-  .portrait{grid-column:1;grid-row:1;width:140px}
+  .portrait{grid-column:1;grid-row:1;width:110px}
   .hero .intro{grid-row:2}
   .sec-head h2{font-size:1.7rem}
   .feat-visual{height:160px}
@@ -206,7 +206,7 @@ main .wrap{container-type:inline-size}
   .grip{display:none}
   .side .panel-head,.side .panel-body{padding-left:28px}
   .hero{grid-template-columns:1fr;gap:28px;padding:28px 0 32px}
-  .portrait{grid-column:1;grid-row:1;width:150px;box-shadow:5px 5px 0 var(--violet)}
+  .portrait{grid-column:1;grid-row:1;width:110px;box-shadow:4px 4px 0 var(--violet)}
   .hero .intro{grid-row:2}
   header.top .role-top,header.top .nl{display:none}
   header.top nav{gap:18px}
